@@ -1,10 +1,9 @@
 # ronmapue.com
-
-Starter kit used: [Learn Next.js](https://nextjs.org/learn).
+Basically an overwrite of an existing project
 
 ## Design & Architecture & Planning
 Frontend:
-- Nextjs
+- Nextjs (Starter kit used: [Learn Next.js](https://nextjs.org/learn))
 
 Deploy or Host:
 - Netlify (because I had an existing account there, so it was easier)
