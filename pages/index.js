@@ -6,11 +6,12 @@ import logo from '../public/RM-logos_black.png'
 import Link from 'next/link'
 
 // TODO: release2? refactor to components
-export default function Home() {
+// TODO: cache the assets
+const Home = ({ posts }) => {
   return (
     <div>
       <Head>
-        <title>Ron's website</title>
+        <title>ronmapue.com</title>
         <link rel="icon" href="/RM-logos_black_cropped.png" />
       </Head>
 
@@ -25,6 +26,10 @@ export default function Home() {
               />
             </Link>
             <ul className="flex items-center">
+              <Link href="/blogs" passHref>
+                {/* TODO: style */}
+                Blog
+              </Link>
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
@@ -70,3 +75,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home
