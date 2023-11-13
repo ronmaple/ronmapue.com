@@ -6,6 +6,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "graphql": "^16.8.1",
+    "graphql-request": "^6.1.0",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
