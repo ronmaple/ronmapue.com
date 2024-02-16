@@ -42,7 +42,7 @@ const SLUGLIST = gql`
 export const getStaticPaths = async () => {
   const { posts } = await client.request(SLUGLIST)
   return {
-    fallback: false,
+    fallback: true,
     paths: posts.map((post) => ({
       params: {
         slug: post.slug,
@@ -58,6 +58,7 @@ export const getStaticProps = async ({ params }) => {
     props: {
       post: response.post,
     },
+    revalidate: 60,
   }
 }
 
